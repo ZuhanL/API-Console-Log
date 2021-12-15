@@ -1,7 +1,12 @@
-const URL = "https://foodish-api.herokuapp.com/images/biryani/biryani32.jpg";
+const URL = "https://api.quotable.io/random";
 
 async function getData(URL) {
-    const response = await fetch(URL);
-    console.log(response);
+    try {
+        const response = await fetch(URL);
+        const data = await response.json();
+        document.getElementById("api-response").textContent = data.content;
+    } catch (error) {
+        console.log(error);
+    }
 }
 getData(URL);
