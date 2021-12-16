@@ -6,11 +6,14 @@
   color: #2c3e50;
   margin-top: 60px;
 }
-h1 {
+html {
+  background-color: aqua;
+}
+h1,
+h3 {
   text-align: center;
   font-size: 4rem;
 }
-h3 {
+.btn {
   font-size: 2rem;
-  text-align: center;
 }
