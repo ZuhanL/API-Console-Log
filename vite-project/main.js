@@ -14,7 +14,7 @@ async function getData(URL) {
 getData(URL);
 
 DOMSelector = {
-    Text: getElementById("Gen"),
+    Text: document.getElementById("Gen"),
 };
 
 
