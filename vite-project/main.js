@@ -1,6 +1,6 @@
 import './style.css'
 
-const URL = "https://api.quotable.io/random";
+const URL = "https://api.quotable.io";
 
 async function getData(URL) {
     try {
@@ -14,7 +14,7 @@ async function getData(URL) {
 getData(URL);
 
 DOMSelector = {
-    button: getElementById("Gen"),
+    Text: getElementById("Gen"),
 };
 
 
