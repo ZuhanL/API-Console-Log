@@ -10,9 +10,9 @@ html {
   background-color: aqua;
 }
 h1,
-h3 {
+.button {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .btn {
   font-size: 2rem;
