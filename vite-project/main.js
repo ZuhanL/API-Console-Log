@@ -13,3 +13,7 @@ async function getData(URL) {
 }
 getData(URL);
 
+DOMSelector = {
+    button: getElementById("Gen")
+}
+
