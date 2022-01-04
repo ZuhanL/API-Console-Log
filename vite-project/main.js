@@ -1,4 +1,4 @@
-import './style.css';
+import './style.css'
 
 const URL = "https://api.quotable.io/random?maxLength=50";
 
@@ -12,5 +12,4 @@ async function getData(URL) {
     }
 }
 getData(URL);
-
 
