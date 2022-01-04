@@ -1,6 +1,6 @@
 import './style.css'
 
-const URL = "https://api.quotable.io/random";
+const URL = "https://api.quotable.io/random?maxLength=50";
 
 async function getData(URL) {
     try {
