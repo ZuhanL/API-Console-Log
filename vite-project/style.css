@@ -29,3 +29,17 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 }
+:root {
+  --black: #000;
+  --white: #ffffff;
+}
+.light {
+  color: var(--white);
+  background-color: var(--black);
+  border-color: var(--white);
+}
+.dark {
+  color: var(--black);
+  background-color: var(--white);
+  border-color: var(--black);
+}
