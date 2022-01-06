@@ -19,7 +19,6 @@ const DOMSelectors = {
     SHORT: document.getElementById("btn2"),
     LONG: document.getElementById("btn3"),
 };
-console.log(DOMSelectors)
 
 DOMSelectors.buttontheme.addEventListener("click", function () {
     if (document.body.classList.contains("light")) {
