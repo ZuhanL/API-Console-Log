@@ -1,23 +1,25 @@
 import './style.css';
 
-const URL = "https://api.quotable.io/random?maxLength=50";
+const url = "https://api.quotable.io/random?maxLength=50";
 
-async function getData(URL) {
-    try {
-        const response = await fetch(URL);
-        const data = await response.json();
-        document.getElementById("api-response").textContent = data.content;
-    } catch (error) {
-        console.log(error);
-    }
-}
-getData(URL);
+let quote = document.getElementById("quote");
+let author = document.getElementById("author");
+let btn = document.getElementById("btn");
+
+let ShortQuote = () => {
+  fetch(url)
+    .then((data) => data.json())
+    .then((item) => {
+      quote.innerText = item.content;
+      author.innerText = item.author;
+    });
+};
+window.addEventListener("load", ShortQuote);
+btn.addEventListener("click", ShortQuote);
 
 const DOMSelectors = {
     buttontheme: document.getElementById("btn1"),
     box: document.querySelector(".Flexbox"),
-    SHORT: document.getElementById("btn2"),
-    LONG: document.getElementById("btn3"),
 };
 
 DOMSelectors.buttontheme.addEventListener("click", function () {
