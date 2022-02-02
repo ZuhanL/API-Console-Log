@@ -17,6 +17,9 @@ let ShortQuote = () => {
 window.addEventListener("load", ShortQuote);
 btn.addEventListener("click", ShortQuote);
 
+const url = "https://api.quotable.io/random?minLength=100&maxLength=140";
+
+
 const DOMSelectors = {
     buttontheme: document.getElementById("btn1"),
     box: document.querySelector(".Flexbox"),
